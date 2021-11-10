@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sam's Expenses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <h1>Sam's Expenses</h1>
+  
+  <form id="expenseForm">
+    <label for="datePurchased">Date:</label>
+    <input type="date" name="datePurchased" class="datePurchased" required>
+    <label for="expense">Expense:</label>
+    <input type="text" name="expense" class="expense" placeholder="item purchased" required>
+    <label for="amount">Amount:</label>
+    <input type="number" name="amount" class="amount" placeholder="0.00" step="0.01" required>
+    <button class="submitButton">+ Expense</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="mdCol">Date</th>
+        <th class="lgCol">Purchased</th>
+        <th class="mdCol">Amount</th>
+        <th class="smCol"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table">
+        <td class="emptyRow" colspan="4">Add a new expense</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- <h2>Total Spent: <span class="total"></span></h2> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
